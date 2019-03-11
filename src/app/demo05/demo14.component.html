@@ -1,0 +1,6 @@
+<div id="bian">
+    <p [ngStyle]="{color:color}">你被监听了</p>
+    <p [ngClass]="{red:true}">{{uAddress}}</p>
+    <!-- angular中的监听模块数据 -->
+    <input type="text" [(ngModel)]="uAddress" (ngModelChange)="headleChange()"/>
+</div>

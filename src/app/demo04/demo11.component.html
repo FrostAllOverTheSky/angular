@@ -1,0 +1,13 @@
+<div id="san">
+   
+    <div [ngSwitch] = "answer">
+        <p *ngSwitchCase="'a'">大舅</p>
+        <p *ngSwitchCase="'b'">二舅</p>
+        <p *ngSwitchCase="'c'">三舅</p>
+        <p *ngSwitchCase="'d'">姥爷</p>
+        <p *ngSwitchCase="'e'">姥姥</p>
+    </div>
+    <button (click)="headClick()">使劲点我</button>
+    <input type="text" [(ngModel)]="uname">
+     <h2>{{uname}}</h2>
+</div>
